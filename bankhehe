@@ -110,7 +110,7 @@ end
 -- Checks
 
 
-if _G.LoadingScreen ~= true then
+if _G.LoadingScreen ~= false then
     loadstring(game:HttpGet(loadingraw))()
 end
 if _G.AntiLeave ~= false then
