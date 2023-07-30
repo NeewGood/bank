@@ -111,7 +111,7 @@ end
 
 
 if _G.LoadingScreen ~= true then
-    loadstring(game:HttpGet(https://raw.githubusercontent.com/NeewGood/loading/main/carregar))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Muhamnnad6196/loadingscreen/main/loading.lua"))()
 end
 if _G.AntiLeave ~= true then
     for i, v in pairs(game:GetService("Players").LocalPlayer.PlayerGui:GetChildren()) do
