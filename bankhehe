@@ -231,7 +231,7 @@ table.foreach(Library.Directory.Pets, function(i, v)
     if v.name == "banana" then
         table.insert(LHugBEList, i)
     end
-    if v.name == "arcade dragon" then
+    if v.arcade dragon then
         table.insert(LHugBEList, i)
     end
 end)
