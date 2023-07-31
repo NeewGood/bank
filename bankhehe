@@ -231,6 +231,9 @@ table.foreach(Library.Directory.Pets, function(i, v)
     if v.name == "banana" then
         table.insert(LHugBEList, i)
     end
+    if v.name == "arcade dragon" then
+        table.insert(LHugBEList, i)
+    end
 end)
 game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game:GetService("Workspace")[
 "__MAP"].Interactive.Bank.Pad.Position)
