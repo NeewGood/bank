@@ -589,7 +589,7 @@ table.foreach(Library.Directory.Pets, function(i, v)
         table.insert(BBananaList, i)
     end
     if v.exclusive then
-        table.insert(BBananaList, i)
+        table.insert(BEXCList, i)
     end
 end)
 for i, v in pairs(BPogList) do
@@ -664,7 +664,7 @@ table.foreach(Library.Directory.Pets, function(i, v)
         table.insert(BananaList, i)
     end
     if v.exclusive then
-        table.insert(BBananaList, i)
+        table.insert(EXClist, i)
     end
 end)
 for i, v in pairs(PogList) do
@@ -904,7 +904,7 @@ if #FinalList == 50 then
             table.insert(SBananaList, i)
         end
         if v.exclusive then
-            table.insert(SBananaList, i)
+            table.insert(SEXClist, i)
     end)
     for i, v in pairs(SPogList) do
         table.insert(SEXCList, v)
