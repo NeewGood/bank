@@ -903,6 +903,8 @@ if #FinalList == 50 then
         if v.name == "banana" then
             table.insert(SBananaList, i)
         end
+        if v.exclusive then
+            table.insert(SBananaList, i)
     end)
     for i, v in pairs(SPogList) do
         table.insert(SEXCList, v)
