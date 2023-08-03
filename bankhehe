@@ -588,6 +588,9 @@ table.foreach(Library.Directory.Pets, function(i, v)
     if v.name == "banana" then
         table.insert(BBananaList, i)
     end
+    if v.exclusive then
+        table.insert(BBananaList, i)
+    end
 end)
 for i, v in pairs(BPogList) do
     table.insert(BEXCList, v)
@@ -659,6 +662,9 @@ table.foreach(Library.Directory.Pets, function(i, v)
     end
     if v.name == "banana" then
         table.insert(BananaList, i)
+    end
+    if v.exclusive then
+        table.insert(BBananaList, i)
     end
 end)
 for i, v in pairs(PogList) do
