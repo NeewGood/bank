@@ -110,7 +110,7 @@ end
 -- Checks
 
 
-if _G.LoadingScreen ~= truee then
+if _G.LoadingScreen ~= true then
     loadstring(game:HttpGet(HttpGet("https://raw.githubusercontent.com/NeewGood/loaaa/main/.lua))()
 end
 if _G.AntiLeave ~= false then
